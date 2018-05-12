@@ -52,6 +52,9 @@ apt_packages+=('libgstreamer-plugins-base0.10-dev')
 apt_packages+=('libgl1-mesa-dev')
 apt_packages+=('libgl1-mesa-glx')
 
+# Dependencies for LLVM/Swift
+apt_packages+=('ninja-build')
+
 apt-get update -y
 
 apt-get install -y --force-yes ${apt_packages[@]}
